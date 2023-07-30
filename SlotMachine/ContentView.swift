@@ -3,57 +3,89 @@
 //  SlotMachine
 //
 //  Created by Min on 2023/07/25.
-//  일단 만들긴했는데 코드를 생각하면 UI를 짜는게 맞는듯...
+//  음악, UI재배열, 육각버튼 + 그라데이션 추가, 폰트변경, 확률별 테두리변경, 화면 은빛 테두리
 
 import SwiftUI
 
+let screenSize: CGRect = UIScreen.main.bounds
+
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Rectangle() //fill background
-            .foregroundColor(Color(
-            red: 255,
-            green: 255,
-            blue: 255))
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Image("oshinokoBackground")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 0, maxWidth: .infinity)
+            
+            Rectangle()
+                .foregroundColor(.white)
+                .opacity(0.7)
             
             VStack{
-                HStack{ //Title
-                    Text("League of Gamble")
-                        .bold()
-                        .foregroundColor(.black)
-                }.scaleEffect(1.5)
-                
-                Text("Jackpot announcement goes here")
-                    .foregroundColor(.black)
-                    .padding(.all, 5)
-                
-                HStack { //Slot Images
-                    Image("doranB")
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.black)
-                    
-                    Image("doranB")
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.black)
-                    
-                    Image("doranB")
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.black)
-                    
-                    Spacer()
-                }
-                .padding(.leading)
-                
-                HStack { //Deposits and Betting Informations
-                    VStack{
-                        Text("Deposit: £100")
-                            .padding(.all, 10)
-                            .foregroundColor(.black)
+                VStack{
+                    HStack{
+                        Text("")
+                            .frame(width: screenSize.width * 0.65, height: screenSize.width * 0.1)
                         
+                        HStack{
+                            Image("oshinokoRabbitHairpin")
+                                .resizable()
+                                .frame(width: screenSize.width * 0.1, height: screenSize.width * 0.1)
+                            Text("100")
+                                .bold()
+                                .foregroundColor(.black)
+                                .padding(.trailing)
+                        }
+                        .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.1)
+                        .background(.purple)
+                        .cornerRadius(20)
+                    }
+                    
+                    HStack{
+                        Text("")
+                            .frame(width: screenSize.width * 0.65, height: screenSize.width * 0.1)
+                        
+                        HStack{
+                            Button(action: {
+                                //action for probability
+                            }) {
+                                Text("Paytable")
+                                    .bold()
+                                    .padding(.all)
+                                    .foregroundColor(.black)
+                            }
+                            .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.1)
+                            .background(.purple)
+                            .cornerRadius(20)
+                        }
+                    }
+                }
+                
+                Image("oshinokoLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.horizontal)
+     
+                HStack{
+                    Image("volume2")
+                        .resizable()
+                        .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.6)
+                        .cornerRadius(10)
+                    
+                    Image("volume8")
+                        .resizable()
+                        .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.6)
+                        .cornerRadius(10)
+                    
+                    Image("volume11")
+                        .resizable()
+                        .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.6)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
+                
+                HStack {
+                    VStack{
                         HStack{
                             Button(action: {
                                 //reduce current credit
@@ -62,10 +94,11 @@ struct ContentView: View {
                                     .bold()
                                     .foregroundColor(.black)
                                     .padding(.all, 10)
-                                    .background(.blue)
+                                    .background(.purple)
                             }
                             
                             Text("Credits")
+                                .bold()
                                 .foregroundColor(.black)
                             
                             Button(action: {
@@ -75,7 +108,7 @@ struct ContentView: View {
                                     .bold()
                                     .foregroundColor(.black)
                                     .padding(.all, 10)
-                                    .background(.blue)
+                                    .background(.purple)
                             }
                         }
                         
@@ -87,10 +120,11 @@ struct ContentView: View {
                                     .bold()
                                     .foregroundColor(.black)
                                     .padding(.all, 10)
-                                    .background(.blue)
+                                    .background(.purple)
                             }
                             
                             Text("Lines")
+                                .bold()
                                 .foregroundColor(.black)
                             
                             Button(action: {
@@ -100,13 +134,14 @@ struct ContentView: View {
                                     .bold()
                                     .foregroundColor(.black)
                                     .padding(.all, 10)
-                                    .background(.blue)
+                                    .background(.purple)
                             }
                         }
                         
                         Text("Total Bet: ")
+                            .bold()
                             .foregroundColor(.black)
-
+                        
                     }
                     
                     VStack{
@@ -116,9 +151,12 @@ struct ContentView: View {
                             Text("Maximum Bet")
                                 .bold()
                                 .foregroundColor(.black)
-                                .padding(.all, 10)
-                                .background(.blue)
+                                .padding(.all)
+                                .background(.purple)
                         }
+                        .frame(width: screenSize.width * 0.4, height: screenSize.width * 0.1)
+                        .background(.purple)
+                        .cornerRadius(20)
                         
                         Button(action: {
                             //action for Auto Spin
@@ -126,20 +164,24 @@ struct ContentView: View {
                             Text("Auto Spin")
                                 .bold()
                                 .foregroundColor(.black)
-                                .padding(.all, 10)
-                                .background(.green)
+                                .padding(.all)
+                                .background(.purple)
                         }
+                        .frame(width: screenSize.width * 0.4, height: screenSize.width * 0.1)
+                        .background(.purple)
+                        .cornerRadius(20)
                         
                         Button(action: {
                             //action for Regular spin
                         }) {
-                            Text("Spin")
+                            Text("SPIN")
                                 .bold()
+                                .padding(.all)
                                 .foregroundColor(.black)
-                                .padding(.all, 10)
-                                .background(.yellow)
                         }
-                        
+                        .frame(width: screenSize.width * 0.4, height: screenSize.width * 0.1)
+                        .background(.purple)
+                        .cornerRadius(20)
                     }
                 }
             }
