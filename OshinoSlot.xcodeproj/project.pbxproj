@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39D815BC2A769B7D0042D918 /* OshinoSlotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D815BB2A769B7D0042D918 /* OshinoSlotApp.swift */; };
+		39D815BE2A769B7D0042D918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D815BD2A769B7D0042D918 /* ContentView.swift */; };
+		39D815C02A769B800042D918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D815BF2A769B800042D918 /* Assets.xcassets */; };
+		39D815C32A769B800042D918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D815C22A769B800042D918 /* Preview Assets.xcassets */; };
+		39D815CD2A769B800042D918 /* OshinoSlotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D815CC2A769B800042D918 /* OshinoSlotTests.swift */; };
+		39D815D72A769B800042D918 /* OshinoSlotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D815D62A769B800042D918 /* OshinoSlotUITests.swift */; };
+		39D815D92A769B800042D918 /* OshinoSlotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D815D82A769B800042D918 /* OshinoSlotUITestsLaunchTests.swift */; };
+		39D815F42A76A9FA0042D918 /* Cantoria.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D815F32A76A9FA0042D918 /* Cantoria.otf */; };
+		39D816042A76B1170042D918 /* FontRecognitionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D816032A76B1170042D918 /* FontRecognitionCheck.swift */; };
+		39D816052A76B1170042D918 /* FontRecognitionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D816032A76B1170042D918 /* FontRecognitionCheck.swift */; };
+		39D816062A76B1170042D918 /* FontRecognitionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D816032A76B1170042D918 /* FontRecognitionCheck.swift */; };
+		39D8161A2A77071F0042D918 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D816192A77071F0042D918 /* ColorExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39D815C92A769B800042D918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D815B02A769B7C0042D918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D815B72A769B7D0042D918;
+			remoteInfo = OshinoSlot;
+		};
+		39D815D32A769B800042D918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D815B02A769B7C0042D918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D815B72A769B7D0042D918;
+			remoteInfo = OshinoSlot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39D815B82A769B7D0042D918 /* OshinoSlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OshinoSlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D815BB2A769B7D0042D918 /* OshinoSlotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OshinoSlotApp.swift; sourceTree = "<group>"; };
+		39D815BD2A769B7D0042D918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39D815BF2A769B800042D918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39D815C22A769B800042D918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39D815C82A769B800042D918 /* OshinoSlotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OshinoSlotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D815CC2A769B800042D918 /* OshinoSlotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OshinoSlotTests.swift; sourceTree = "<group>"; };
+		39D815D22A769B800042D918 /* OshinoSlotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OshinoSlotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D815D62A769B800042D918 /* OshinoSlotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OshinoSlotUITests.swift; sourceTree = "<group>"; };
+		39D815D82A769B800042D918 /* OshinoSlotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OshinoSlotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39D815EA2A769E500042D918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		39D815F32A76A9FA0042D918 /* Cantoria.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cantoria.otf; sourceTree = "<group>"; };
+		39D816032A76B1170042D918 /* FontRecognitionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontRecognitionCheck.swift; sourceTree = "<group>"; };
+		39D816192A77071F0042D918 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39D815B52A769B7D0042D918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815C52A769B800042D918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815CF2A769B800042D918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D815AF2A769B7C0042D918 = {
+			isa = PBXGroup;
+			children = (
+				39D815BA2A769B7D0042D918 /* OshinoSlot */,
+				39D815CB2A769B800042D918 /* OshinoSlotTests */,
+				39D815D52A769B800042D918 /* OshinoSlotUITests */,
+				39D815B92A769B7D0042D918 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39D815B92A769B7D0042D918 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D815B82A769B7D0042D918 /* OshinoSlot.app */,
+				39D815C82A769B800042D918 /* OshinoSlotTests.xctest */,
+				39D815D22A769B800042D918 /* OshinoSlotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D815BA2A769B7D0042D918 /* OshinoSlot */ = {
+			isa = PBXGroup;
+			children = (
+				39D815EA2A769E500042D918 /* Info.plist */,
+				39D815BB2A769B7D0042D918 /* OshinoSlotApp.swift */,
+				39D815BD2A769B7D0042D918 /* ContentView.swift */,
+				39D816192A77071F0042D918 /* ColorExtension.swift */,
+				39D815BF2A769B800042D918 /* Assets.xcassets */,
+				39D815E52A769DC00042D918 /* Fonts */,
+				39D815C12A769B800042D918 /* Preview Content */,
+			);
+			path = OshinoSlot;
+			sourceTree = "<group>";
+		};
+		39D815C12A769B800042D918 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				39D815C22A769B800042D918 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39D815CB2A769B800042D918 /* OshinoSlotTests */ = {
+			isa = PBXGroup;
+			children = (
+				39D815CC2A769B800042D918 /* OshinoSlotTests.swift */,
+			);
+			path = OshinoSlotTests;
+			sourceTree = "<group>";
+		};
+		39D815D52A769B800042D918 /* OshinoSlotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39D815D62A769B800042D918 /* OshinoSlotUITests.swift */,
+				39D815D82A769B800042D918 /* OshinoSlotUITestsLaunchTests.swift */,
+			);
+			path = OshinoSlotUITests;
+			sourceTree = "<group>";
+		};
+		39D815E52A769DC00042D918 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				39D815F32A76A9FA0042D918 /* Cantoria.otf */,
+				39D816032A76B1170042D918 /* FontRecognitionCheck.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39D815B72A769B7D0042D918 /* OshinoSlot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D815DC2A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlot" */;
+			buildPhases = (
+				39D815B42A769B7D0042D918 /* Sources */,
+				39D815B52A769B7D0042D918 /* Frameworks */,
+				39D815B62A769B7D0042D918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OshinoSlot;
+			productName = OshinoSlot;
+			productReference = 39D815B82A769B7D0042D918 /* OshinoSlot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39D815C72A769B800042D918 /* OshinoSlotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D815DF2A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlotTests" */;
+			buildPhases = (
+				39D815C42A769B800042D918 /* Sources */,
+				39D815C52A769B800042D918 /* Frameworks */,
+				39D815C62A769B800042D918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39D815CA2A769B800042D918 /* PBXTargetDependency */,
+			);
+			name = OshinoSlotTests;
+			productName = OshinoSlotTests;
+			productReference = 39D815C82A769B800042D918 /* OshinoSlotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39D815D12A769B800042D918 /* OshinoSlotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D815E22A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlotUITests" */;
+			buildPhases = (
+				39D815CE2A769B800042D918 /* Sources */,
+				39D815CF2A769B800042D918 /* Frameworks */,
+				39D815D02A769B800042D918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39D815D42A769B800042D918 /* PBXTargetDependency */,
+			);
+			name = OshinoSlotUITests;
+			productName = OshinoSlotUITests;
+			productReference = 39D815D22A769B800042D918 /* OshinoSlotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39D815B02A769B7C0042D918 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					39D815B72A769B7D0042D918 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					39D815C72A769B800042D918 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 39D815B72A769B7D0042D918;
+					};
+					39D815D12A769B800042D918 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 39D815B72A769B7D0042D918;
+					};
+				};
+			};
+			buildConfigurationList = 39D815B32A769B7C0042D918 /* Build configuration list for PBXProject "OshinoSlot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39D815AF2A769B7C0042D918;
+			productRefGroup = 39D815B92A769B7D0042D918 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39D815B72A769B7D0042D918 /* OshinoSlot */,
+				39D815C72A769B800042D918 /* OshinoSlotTests */,
+				39D815D12A769B800042D918 /* OshinoSlotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39D815B62A769B7D0042D918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D815C32A769B800042D918 /* Preview Assets.xcassets in Resources */,
+				39D815F42A76A9FA0042D918 /* Cantoria.otf in Resources */,
+				39D815C02A769B800042D918 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815C62A769B800042D918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815D02A769B800042D918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39D815B42A769B7D0042D918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D816042A76B1170042D918 /* FontRecognitionCheck.swift in Sources */,
+				39D815BE2A769B7D0042D918 /* ContentView.swift in Sources */,
+				39D815BC2A769B7D0042D918 /* OshinoSlotApp.swift in Sources */,
+				39D8161A2A77071F0042D918 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815C42A769B800042D918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D815CD2A769B800042D918 /* OshinoSlotTests.swift in Sources */,
+				39D816052A76B1170042D918 /* FontRecognitionCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D815CE2A769B800042D918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D816062A76B1170042D918 /* FontRecognitionCheck.swift in Sources */,
+				39D815D92A769B800042D918 /* OshinoSlotUITestsLaunchTests.swift in Sources */,
+				39D815D72A769B800042D918 /* OshinoSlotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39D815CA2A769B800042D918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39D815B72A769B7D0042D918 /* OshinoSlot */;
+			targetProxy = 39D815C92A769B800042D918 /* PBXContainerItemProxy */;
+		};
+		39D815D42A769B800042D918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39D815B72A769B7D0042D918 /* OshinoSlot */;
+			targetProxy = 39D815D32A769B800042D918 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39D815DA2A769B800042D918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39D815DB2A769B800042D918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39D815DD2A769B800042D918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OshinoSlot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OshinoSlot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39D815DE2A769B800042D918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OshinoSlot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OshinoSlot/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39D815E02A769B800042D918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OshinoSlot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OshinoSlot";
+			};
+			name = Debug;
+		};
+		39D815E12A769B800042D918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OshinoSlot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OshinoSlot";
+			};
+			name = Release;
+		};
+		39D815E32A769B800042D918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OshinoSlot;
+			};
+			name = Debug;
+		};
+		39D815E42A769B800042D918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visino.OshinoSlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OshinoSlot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39D815B32A769B7C0042D918 /* Build configuration list for PBXProject "OshinoSlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D815DA2A769B800042D918 /* Debug */,
+				39D815DB2A769B800042D918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D815DC2A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D815DD2A769B800042D918 /* Debug */,
+				39D815DE2A769B800042D918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D815DF2A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D815E02A769B800042D918 /* Debug */,
+				39D815E12A769B800042D918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D815E22A769B800042D918 /* Build configuration list for PBXNativeTarget "OshinoSlotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D815E32A769B800042D918 /* Debug */,
+				39D815E42A769B800042D918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39D815B02A769B7C0042D918 /* Project object */;
+}
