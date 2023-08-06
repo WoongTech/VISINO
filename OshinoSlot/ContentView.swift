@@ -17,6 +17,16 @@ import SwiftUI
 let screenSize: CGRect = UIScreen.main.bounds
 
 struct ContentView: View {
+    
+    private let image_names = ["volume2", "volume4", "volume5", "volume8", "volume9", "volume11"]
+    private let slot1 = [0,3,3,1,2,5,5,4]
+    private let slot2 = [2,0,3,1,2,3,5,4,1,1]
+    private let slot3 = [5,3,1,2,5,0,0]
+    
+    @State private var slot1_image = "volume2"
+    @State private var slot2_image = "volume5"
+    @State private var slot3_image = "volume11"
+    
     var body: some View {
         ZStack{
             Image("oshinokoBackground") //ContentView BKGRD IMG
@@ -110,7 +120,7 @@ struct ContentView: View {
                             .frame(width: screenSize.width * 0.31, height: screenSize.width * 0.60)
                             .cornerRadius(10)
                         
-                        Image("volume2") //Slot 1 img
+                        Image(slot1_image) //Slot 1 img
                             .resizable()
                             .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.59)
                             .cornerRadius(10)
@@ -122,7 +132,7 @@ struct ContentView: View {
                             .frame(width: screenSize.width * 0.31, height: screenSize.width * 0.60)
                             .cornerRadius(10)
                         
-                        Image("volume8") //Slot 2 img
+                        Image(slot2_image) //Slot 2 img
                             .resizable()
                             .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.59)
                             .cornerRadius(10)
@@ -134,7 +144,7 @@ struct ContentView: View {
                             .frame(width: screenSize.width * 0.31, height: screenSize.width * 0.60)
                             .cornerRadius(10)
                         
-                        Image("volume11") //Slot 3 img
+                        Image(slot3_image) //Slot 3 img
                             .resizable()
                             .frame(width: screenSize.width * 0.3, height: screenSize.width * 0.59)
                             .cornerRadius(10)
@@ -251,7 +261,13 @@ struct ContentView: View {
                         .cornerRadius(20)
                         
                         Button(action: {
-                            //action for Regular spin
+                            let slot1_idx = spin_slot(slot_len:slot1.count)
+                            assign_image(number: slot1_idx, slot: slot1, slot_image: &slot1_image)
+                            let slot2_idx = spin_slot(slot_len:slot2.count)
+                            assign_image(number: slot2_idx, slot: slot2, slot_image: &slot2_image)
+                            let slot3_idx = spin_slot(slot_len:slot3.count)
+                            assign_image(number: slot3_idx, slot: slot3, slot_image: &slot3_image)
+                            
                         }) {
                             Text("SPIN")
                                 .font(.custom("CantoriaMTStd-Bold", size: 16))
@@ -265,6 +281,20 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    func spin_slot(slot_len: Int)->Int {
+        let velocity = Int.random(in: 0...100)
+        
+        let init_number = Int.random(in: 0...5)
+        
+        let slot_result_idx = (init_number + velocity)%slot_len
+        
+        return slot_result_idx
+    }
+    
+    func assign_image(number: Int,slot:Array<Int>, slot_image:inout String) {
+        slot_image = image_names[slot[number]]
     }
 }
 
